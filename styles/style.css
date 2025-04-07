@@ -17,7 +17,7 @@
   font-size: var(--font-size-main), 1.125rem;
   min-block-size: 100dvb;
   font-family: var(--font-family-global), sans-serif;
-  font-variation-settings: var(--font-weight-normal), 400;
+  font-variation-settings: "wght" var(--font-weight-normal), 400;
   padding-block-end: clamp(6.25rem, 0.282vw + 6.184rem, 6.438rem);
 }
 
@@ -28,7 +28,7 @@
   align-items: center;
   font-family: var(--font-family-accent), sans-serif;
   gap: 20px;
-  margin-block-start: 102px;
+  margin-block-start: 100px;
   border: 2px solid var(--accent-color, #000);
   background-color: var(--bg-color, #fff);
   inline-size: var(--section-inline-size);
@@ -51,9 +51,77 @@
   gap: var(--gap-global, 50px);
   margin-block-start: 100px;
   background-color: var(--bg-color, #fff);
+  border: 2px solid var(--accent-color, #000);
 }
 
+.main__card-list {
+
+}
+
+.main__card-item {
+
+}
+
+.main__card-title {
+  font-size: var(--font-size-main, 1.125rem);
+  padding: 5px 10px;
+  font-variation-settings: "wght"  var(--font-weight-bold, 700);
+  border: 2px solid var(--accent-color, #000);
+}
+
+.main__image {
+  position: relative;
+}
 
 .card-image {
   inline-size: 100%;
 }
+
+.label {
+  position: absolute;
+  top: var(--label-padding-top);
+  right: var(--label-padding-right);
+  color: var(--accent-color, #000);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--Themes-background, #FFF);
+  font-family: var(--font-family-accent), sans-serif;
+  font-size: var(--font-size-text);
+  font-variation-settings: "wght"  var(--font-weight-normal, 400);
+  text-transform: uppercase;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+}
+
+
+.main__card {
+  display: grid;
+  gap: 27px;
+  padding: var(--padding-large, 25px);
+  font-variation-settings: "wght"  var(--font-weight-normal, 400);
+  font-size: var(--font-size-main, 1.125rem);
+  line-height: 21px;
+}
+
+.main__card-text {
+  line-height: 21px;
+}
+
+.button {
+  display: flex;
+  gap: 12px;
+  margin-bottom: var(--padding-large, 25px) ;
+  margin-right: var(--padding-large, 25px);
+  justify-content: end;
+  cursor: pointer;
+}
+
+.card__like-button {
+  outline: none;
+  padding: 9px 12px;
+}
+
+.button__text {
+  color: aqua;
+}
+
+

@@ -20,20 +20,31 @@
       <p class="header__text">Закрывающий тег</p>
     </header>
     <main class="main">
-      <ul>
-        <li>
-            <h2>Фритрек и нулевой спринт: Подготовка к работе</h2>
-            <img class="card-image" src="./images/image.jpg" alt="большая бибика">
-            <div>
-            <p> Это было самое начало пути. 
+      <ul class="main__card-list">
+        <li class="main__card-item">
+            <h2 class="main__card-title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+            <div class="main__image">
+            <span class="label">&lt;/HTML&gt;</span>
+            <img class="card-image" 
+            src="./images/image.jpg"
+            alt="большая бибика">           
+            </div>
+
+            <div class="main__card">
+            <p class="main__card-text"> Это было самое начало пути. 
               На этом этапе важно было проникнуться основами и 
-              настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+              настроиться на учёбу. 
+              И, возможно, подумать, 
+              как новые знания могут повлиять на ваше будущее.
             </p>
-            <p>Место для ваших воспоминаний о начале обучения.</p>
+            <p class="main__card-text">Место для ваших воспоминаний о начале обучения.</p>
           </div>
-          <div>
-            <button class="card__icon-button">
-              <svg  class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="button">
+            <button class="card__like-button">
+              <svg  class="like-icon" 
+              width="39" height="36" 
+              viewBox="0 0 39 36" fill="none" 
+              xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 6H9V9H12V6Z" fill="black"/>
                 <path d="M15 6H12V9H15V6Z" fill="black"/>
                 <path d="M9 9H6V12H9V9Z" fill="black"/>
@@ -61,7 +72,9 @@
         </li>
       </ul>
     
-      <button class="card__icon-button">
+      <button 
+      class="card__icon-button"
+      type="button">
          <svg>
           <use> 
             
