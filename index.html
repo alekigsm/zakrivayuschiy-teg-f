@@ -27,9 +27,10 @@
             <span class="label">&lt;/HTML&gt;</span>
             <img class="card-image" 
             src="./images/image.jpg"
-            alt="большая бибика">           
+            alt="большая бибика"
+            loading="lazy"
+            />           
             </div>
-
             <div class="main__card">
             <p class="main__card-text"> Это было самое начало пути. 
               На этом этапе важно было проникнуться основами и 
@@ -37,50 +38,67 @@
               И, возможно, подумать, 
               как новые знания могут повлиять на ваше будущее.
             </p>
-            <p class="main__card-text">Место для ваших воспоминаний о начале обучения.</p>
-          </div>
-          <div class="button">
-            <button class="card__like-button">
-              <svg  class="like-icon" 
-              width="39" height="36" 
-              viewBox="0 0 39 36" fill="none" 
-              xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 6H9V9H12V6Z" fill="black"/>
-                <path d="M15 6H12V9H15V6Z" fill="black"/>
-                <path d="M9 9H6V12H9V9Z" fill="black"/>
-                <path d="M9 12H6V15H9V12Z" fill="black"/>
-                <path d="M9 15H6V18H9V15Z" fill="black"/>
-                <path d="M18 6H15V9H18V6Z" fill="black"/>
-                <path d="M12 18H9V21H12V18Z" fill="black"/>
-                <path d="M15 21H12V24H15V21Z" fill="black"/>
-                <path d="M18 24H15V27H18V24Z" fill="black"/>
-                <path d="M27 6H30V9H27V6Z" fill="black"/>
-                <path d="M24 6H27V9H24V6Z" fill="black"/>
-                <path d="M30 9H33V12H30V9Z" fill="black"/>
-                <path d="M30 12H33V15H30V12Z" fill="black"/>
-                <path d="M30 15H33V18H30V15Z" fill="black"/>
-                <path d="M21 6H24V9H21V6Z" fill="black"/>
-                <path d="M27 18H30V21H27V18Z" fill="black"/>
-                <path d="M24 21H27V24H24V21Z" fill="black"/>
-                <path d="M21 24H24V27H21V24Z" fill="black"/>
-                <path d="M21 9H18V12H21V9Z" fill="black"/>
-                <path d="M21 27H18V30H21V27Z" fill="black"/>
-                </svg>
-                <span class="button__text"> Like</span>
-            </button>
-          </div>
+            <p class="main__card-text">Место для ваших воспоминаний о начале обучения.
+              
+            </p>
+            <div class="main__like">
+              <button 
+              class="card__icon-button"
+              type="button"
+              aria-label="черно-белое сердце">
+                <svg  
+                class="like-icon" 
+                width="39" height="36" 
+                viewBox="0 0 39 36" fill="none" 
+                xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 6H9V9H12V6Z" fill="black"/>
+                  <path d="M15 6H12V9H15V6Z" fill="black"/>
+                  <path d="M9 9H6V12H9V9Z" fill="black"/>
+                  <path d="M9 12H6V15H9V12Z" fill="black"/>
+                  <path d="M9 15H6V18H9V15Z" fill="black"/>
+                  <path d="M18 6H15V9H18V6Z" fill="black"/>
+                  <path d="M12 18H9V21H12V18Z" fill="black"/>
+                  <path d="M15 21H12V24H15V21Z" fill="black"/>
+                  <path d="M18 24H15V27H18V24Z" fill="black"/>
+                  <path d="M27 6H30V9H27V6Z" fill="black"/>
+                  <path d="M24 6H27V9H24V6Z" fill="black"/>
+                  <path d="M30 9H33V12H30V9Z" fill="black"/>
+                  <path d="M30 12H33V15H30V12Z" fill="black"/>
+                  <path d="M30 15H33V18H30V15Z" fill="black"/>
+                  <path d="M21 6H24V9H21V6Z" fill="black"/>
+                  <path d="M27 18H30V21H27V18Z" fill="black"/>
+                  <path d="M24 21H27V24H24V21Z" fill="black"/>
+                  <path d="M21 24H24V27H21V24Z" fill="black"/>
+                  <path d="M21 9H18V12H21V9Z" fill="black"/>
+                  <path d="M21 27H18V30H21V27Z" fill="black"/>
+                  </svg>              
+              </button>
+              <button 
+              class="button card__like-button"
+              type="button"
+              aria-label="Like">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>        
         </li>
       </ul>
     
       <button 
-      class="card__icon-button"
-      type="button">
-         <svg>
-          <use> 
-            
-          </use>  
-         </svg>
-        <span class="button__text">Сохранить на память</span></button>
+      class="button disc__button"
+      type="button"
+      aria-label="дискетка из древности кому за 30">
+      <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+        <symbol id="save-icon">
+          <path fill="currentColor" 
+          d="M0 0h3v3H0zM0 3h3v3H0zM0 6h3v3H0zM0 9h3v3H0zM0 12h3v3H0zM0 15h3v3H0zM0 18h3v3H0zM0 21h3v3H0zM0 24h3v3H0zM0 27h3v3H0zM0 30h3v3H0zM0 33h3v3H0zM0 36h3v3H0zM33 0v3h-3V0zM30 0v3h-3V0zM27 0v3h-3V0zM24 0v3h-3V0zM21 0v3h-3V0zM18 0v3h-3V0zM15 0v3h-3V0zM12 0v3H9V0zM9 0v3H6V0zM6 0v3H3V0zM36 3v3h-3V3zM9 6v3H6V6zM9 3v3H6V3zM9 9v3H6V9zM30 6v3h-3V6zM30 3v3h-3V3zM30 9v3h-3V9zM24 6v3h-3V6zM24 3v3h-3V3zM24 9v3h-3V9zM30 12v3h-3v-3zM27 12v3h-3v-3zM24 12v3h-3v-3zM21 12v3h-3v-3zM18 12v3h-3v-3zM15 12v3h-3v-3zM12 12v3H9v-3zM9 12v3H6v-3zM33 21v3h-3v-3zM30 21v3h-3v-3zM27 21v3h-3v-3zM24 21v3h-3v-3zM21 21v3h-3v-3zM18 21v3h-3v-3zM15 21v3h-3v-3zM12 21v3H9v-3zM9 21v3H6v-3zM33 24v3h-3v-3zM9 24v3H6v-3zM33 27v3h-3v-3zM9 27v3H6v-3zM33 30v3h-3v-3zM9 30v3H6v-3zM9 33v3H6v-3zM33 33v3h-3v-3zM36 36v3h-3v-3zM33 36v3h-3v-3zM30 36v3h-3v-3zM27 36v3h-3v-3zM24 36v3h-3v-3zM21 36v3h-3v-3zM18 36v3h-3v-3zM15 36v3h-3v-3zM12 36v3H9v-3zM9 36v3H6v-3zM6 36v3H3v-3zM39 39h-3v-3h3zM39 36h-3v-3h3zM39 33h-3v-3h3zM39 30h-3v-3h3zM39 27h-3v-3h3zM39 24h-3v-3h3zM39 21h-3v-3h3zM39 18h-3v-3h3zM39 15h-3v-3h3zM39 12h-3V9h3zM39 9h-3V6h3z"/>
+        </symbol>
+      </svg> 
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+        <use href="#save-icon"></use>
+      </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
