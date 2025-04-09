@@ -176,3 +176,39 @@
 .icon {
   max-block-size: 28px;
 }
+
+.Pop-up {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 191px;
+  min-inline-size: 341px;
+  padding: 30px 40px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.Pop-up__block {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.Pop-up__text {
+  font-family: var(--font-family-accent), sans-serif;
+  font-size: var(--font-size-text, 0.875rem);
+  font-style: normal;
+  font-weight: var(--font-weight-normal), 400;
+  line-height: 150%;
+  text-transform: uppercase; 
+}
+
+.Pop-up__icon-big {
+  max-block-size: 39px;
+}
+
+
+
+.dialog-id::backdrop{
+opacity: 0.75;
+background: var(--accent-color, #000);
+}
