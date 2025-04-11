@@ -23,4 +23,5 @@
     to bottom, transparent 0 2px, #d3d3d3 2px 4px),
   linear-gradient(#e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a);
   --text-color: #fff;
+  --bg-heart: red;
 }
