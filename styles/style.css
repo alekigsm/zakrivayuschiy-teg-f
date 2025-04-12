@@ -96,8 +96,11 @@
   font-size: 0.875rem;
   font-variation-settings: "wght"  var(--font-weight-normal, 400);
   opacity: 0.5;
-  text-shadow: -1px -1px 0 var(--bg-color), 1px -1px 0 var(--bg-color),
-  -1px 1px 0 var(--bg-color), 1px 1px 0 var(--bg-color);
+  text-shadow: 
+  -1px -1px 0 var(--bg-color), 
+  1px -1px 0 var(--bg-color),
+  -1px 1px 0 var(--bg-color), 
+  1px 1px 0 var(--bg-color);
   mix-blend-mode: hard-light;
   line-height: normal;
   text-transform: uppercase;
@@ -107,12 +110,10 @@
   text-transform: lowercase;
 }
 
-@supports ((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
+@supports ((-webkit-text-stroke: 1px var(--bg-color))) {
 
   .label {
     -webkit-text-stroke: 1px var(--bg-color);
-    /* stylelint-disable-next-line property-no-unknown */
-    text-stroke: 1px var(--bg-color);
     text-shadow: none;
   }
 }
