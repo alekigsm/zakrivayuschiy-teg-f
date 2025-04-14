@@ -1,8 +1,8 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --font-family-global: "Inter-Variable";
-  --font-family-accent:"PressStart2P";
+  --font-family-global: 'Inter-Variable';
+  --font-family-accent: 'PressStart2P';
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --font-size-main: 1.125rem;
@@ -16,12 +16,13 @@
   --label-padding-top: clamp(1.4375rem, 1.3935rem + 0.1878vw, 1.5625rem);
   --label-padding-right: clamp(0.6875rem, 0.3794rem + 1.3146vw, 1.5625rem);
   --padding-large: 25px;
-  --page-bc-image:repeating-linear-gradient(
-    to right,transparent 0 2px, #d3d3d3 2px 4px
-  ),
-  repeating-linear-gradient(
-    to bottom, transparent 0 2px, #d3d3d3 2px 4px),
-  linear-gradient(#e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a);
+  --page-bc-image: repeating-linear-gradient(
+      to right,
+      transparent 0 2px,
+      #d3d3d3 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, transparent 0 2px, #d3d3d3 2px 4px),
+    linear-gradient(#e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a);
   --text-color: #fff;
-  --bg-heart: red;
+  --bg-heart: #f00;
 }

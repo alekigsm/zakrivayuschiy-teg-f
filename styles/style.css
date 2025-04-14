@@ -17,7 +17,7 @@
   font-size: var(--font-size-main), 1.125rem;
   min-block-size: 100dvb;
   font-family: var(--font-family-global), sans-serif;
-  font-variation-settings: "wght" var(--font-weight-normal), 400;
+  font-variation-settings: 'wght' var(--font-weight-normal), 400;
   padding-block-end: clamp(6.25rem, 0.282vw + 6.184rem, 6.438rem);
   background-image: var(--page-bc-image);
   background-attachment: fixed;
@@ -69,7 +69,7 @@
 .main__card-title {
   font-size: var(--font-size-main, 1.125rem);
   padding: 5px 10px;
-  font-variation-settings: "wght" var(--font-weight-bold, 700);
+  font-variation-settings: 'wght' var(--font-weight-bold, 700);
   line-height: normal;
   border-bottom: 2px solid var(--accent-color, #000);
 }
@@ -89,18 +89,15 @@
 .label {
   z-index: 1;
   position: absolute;
-  top: var( --label-padding-top);
+  top: var(--label-padding-top);
   right: var(--label-padding-right);
   color: var(--accent-color, #000);
   font-family: var(--font-family-accent), sans-serif;
   font-size: 0.875rem;
-  font-variation-settings: "wght"  var(--font-weight-normal, 400);
+  font-variation-settings: 'wght' var(--font-weight-normal, 400);
   opacity: 0.5;
-  text-shadow: 
-  -1px -1px 0 var(--bg-color), 
-  1px -1px 0 var(--bg-color),
-  -1px 1px 0 var(--bg-color), 
-  1px 1px 0 var(--bg-color);
+  text-shadow: -1px -1px 0 var(--bg-color), 1px -1px 0 var(--bg-color),
+    -1px 1px 0 var(--bg-color), 1px 1px 0 var(--bg-color);
   mix-blend-mode: hard-light;
   line-height: normal;
   text-transform: uppercase;
@@ -123,7 +120,7 @@
   flex-direction: column;
   gap: 27px;
   padding: var(--padding-large, 25px);
-  font-variation-settings: "wght"  var(--font-weight-normal, 400);
+  font-variation-settings: 'wght' var(--font-weight-normal, 400);
   font-size: var(--font-size-main, 1.125rem);
   line-height: 21px;
   border-top: 2px solid var(--accent-color, #000);
@@ -157,11 +154,11 @@
 }
 
 .button__text {
-  font-family:  var(--font-family-accent), sans-serif;
+  font-family: var(--font-family-accent), sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 90%;
-  color: var(  --text-color, #fff);
+  color: var(--text-color, #fff);
   z-index: 1;
   mix-blend-mode: difference;
 }
@@ -215,7 +212,7 @@
   font-family: var(--font-family-accent), sans-serif;
   font-style: normal;
   line-height: 150%;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   font-size: 0.875rem;
 }
 
@@ -239,13 +236,13 @@
 }
 
 @media (width <= 375px) {
-
+  
   .icon {
     inline-size: 28px;
     block-size: 28px;
   }
 
-  .disc__button {
+  .main__disc-button {
     flex-direction: column;
     min-block-size: 84px;
     inline-size: 306px;
@@ -266,7 +263,7 @@
 }
 
 .button::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   width: 100%;
@@ -293,11 +290,11 @@
 .like-icon:focus-visible {
   border: solid 2px var(--accent-color, #000);
   transition: 0.3s ease;
-  }
- 
+}
+
 .sparks {
-    opacity: 0;
-  }
+  opacity: 0;
+}
 
 .card__icon-button:hover .core {
   fill: var(--accent-color, #000);
@@ -310,22 +307,22 @@
 }
 
 .card__icon-button:active .main-body {
-  fill: var(--bg-heart, red);
+  fill: var(--bg-heart, #f00);
   transition: fill 0.3s linear 0.05s;
 }
 
 .card__icon-button:active .core {
-  fill: var(--bg-heart, red);
+  fill: var(--bg-heart, #f00);
   transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .core {
-  fill: var(--bg-heart, red);
+  fill: var(--bg-heart, #f00);
   transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
-  fill: var(--bg-heart, red);
+  fill: var(--bg-heart, #f00);
   transition: fill 0.3s linear;
 }
 
@@ -334,14 +331,13 @@
   transition: fill 0.1s linear;
 }
 
-
-.like-icon.is-liked .contour { 
-  fill: var(--bg-heart, red);
+.like-icon.is-liked .contour {
+  fill: var(--bg-heart, #f00);
   transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .heart {
-  fill: var(--bg-heart, red);
+  fill: var(--bg-heart, #f00);
   animation: heartScale 0.3s ease-in 0.1s 1;
 }
 
@@ -358,7 +354,7 @@
 }
 
 .filter-grayscale {
-  filter: grayscale(80%)
+  filter: grayscale(80%);
 }
 
 .filter-hue-rotate {
