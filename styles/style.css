@@ -108,7 +108,6 @@
 }
 
 @supports ((-webkit-text-stroke: 1px var(--bg-color))) {
-
   .label {
     -webkit-text-stroke: 1px var(--bg-color);
     text-shadow: none;
@@ -230,13 +229,12 @@
   text-transform: uppercase;
 }
 
-.dialog-id::backdrop {
+.Pop-up::backdrop {
   opacity: 0.75;
   background: var(--accent-color, #000);
 }
 
 @media (width <= 375px) {
-  
   .icon {
     inline-size: 28px;
     block-size: 28px;
@@ -337,7 +335,7 @@
 }
 
 .like-icon.is-liked .heart {
-  fill: var(--bg-heart, #f00);
+  transform-origin: center center;
   animation: heartScale 0.3s ease-in 0.1s 1;
 }
 
